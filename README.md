@@ -34,6 +34,7 @@ Scheduled via ADF Trigger
 ## 🗃️ Source Data
 The source consists of relational tables from Azure SQL Database.
 In this project, the Sales table was used as an example.
+Table schema is given in 'Schema Creation.sql' file. Tables are populated in another project of ETL using ADLC, Databricks, ADF.
 
 ## 📂 Destination Structure (ADLS Gen2)
 /rawfiles/
