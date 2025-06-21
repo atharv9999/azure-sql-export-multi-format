@@ -21,10 +21,10 @@ This project focuses on data integration and pipeline automation using **Azure D
 
 ## 🛠️ Architecture Overview
 
-Azure SQL DB
-    ↓ (JDBC)
-Databricks Notebook
-    ↓
+Azure SQL DB\n
+    ↓ (JDBC)\n
+Databricks Notebook\n
+    ↓\n
 Writes CSV, Parquet, Avro
     ↓
 ADLS Gen2 Storage
