@@ -21,15 +21,7 @@ This project focuses on data integration and pipeline automation using **Azure D
 
 ## 🛠️ Architecture Overview
 
-- Azure SQL DB
--   ↓ (JDBC)
-- Databricks Notebook
--   ↓
-Writes CSV, Parquet, Avro
-    ↓
-ADLS Gen2 Storage
-    ↓
-Scheduled via ADF Trigger
+Azure SQL DB -> (JDBC) -> Databricks Notebook -> Writes CSV, Parquet, Avro -> ADLS Gen2 Storage -> Scheduled via ADF Trigger
 
 ## 🗃️ Source Data
 The source consists of relational tables from Azure SQL Database.
@@ -37,12 +29,12 @@ In this project, the Sales table was used as an example.
 Table schema is given in 'Schema Creation.sql' file. Tables are populated in another project of ETL using ADLC, Databricks, ADF.
 
 ## 📂 Destination Structure (ADLS Gen2)
-/rawfiles/
-    /csvfiles/
-        Sales.csv
-    /parquetfiles/
-        Sales.parquet
-    /avrofiles/
+/rawfiles/  
+    /csvfiles/  
+        Sales.csv  
+    /parquetfiles/  
+        Sales.parquet  
+    /avrofiles/  
         Sales.avro
 
 ## 🔁 Workflow Steps
